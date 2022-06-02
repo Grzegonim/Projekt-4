@@ -1,0 +1,245 @@
+/* Variables */
+$color-one: #f9ca24;
+/* Global */
+body {
+    padding: 0;
+    margin: 0;
+}
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 200px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.title-inner {
+    text-align: center;
+
+    h1 {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: grey;
+        font-style: italic;
+        margin-top: 5px;
+    }
+}
+
+/* Navigation */
+.navi {
+    padding-top: 20px;
+    padding-left: 100px;
+    text-align: center;
+}
+.navigation {
+    font-family: 'Open Sans';
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover {
+        color: $color-one;
+    }
+
+    ul ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+
+    }
+
+    li ul {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    li:hover ul {
+        display: block;
+    }
+}
+
+.logo {
+    font-family: 'Pacifico';
+    color: $color-one;
+    font-size: 36px;
+    line-height: 0;
+    padding-top: 10px;
+
+    p {
+        margin-top:0;
+    }
+}
+
+/* Splash */
+header {
+    position:absolute;
+    z-index: 2;
+}
+.splash {
+    background-image: url("https://i.postimg.cc/L8FTtWz4/splash.jpg");
+    height: 75vh;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: black 0.3;
+    h1, h4 {
+        text-align: center;
+        color:#fff;
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 30px;
+        font-family: 'Open Sans'
+    }
+}
+
+.splash-header {
+    align-self: center;
+}
+
+.btn-splash {
+    background: $color-one;
+    color: black;
+    border: 2px solid $color-one;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+/* Services */
+.services {
+    text-align: center;
+
+    i {
+    color: $color-one;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    border: 5px solid $color-one;
+
+    }
+    i::before {
+        font-size: 50px;
+        line-height: 80px;  
+    }
+
+    p {
+        font-style: italic;
+        color: grey;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'Open Sans';
+    }
+}
+
+
+/* Portfolio */
+.portfolio {
+    background: #dff9fb;
+    padding: 30px 0;
+}
+
+.portfolio-inner {
+    line-height: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.portfolio-img {
+    margin-bottom: 25px;
+}
+
+.under-image {
+    width: 100%;
+    height: 70px;
+    background: white;
+
+    h4 {
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    p {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 40px;
+        font-style: italic;
+        color: grey;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    font-family: "Open Sans";
+    text-align: center;
+    i {
+        color: #fff;
+        background: black;
+        height: 30px;
+        width:30px;
+        border-radius: 50%;
+        text-align: center; 
+        margin-right: 10px;
+        margin-top: 16px;
+    }
+
+    i::before {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    i:hover {
+        color: #fff;
+        background: $color-one;
+        cursor: pointer;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    span {
+        font-style: italic;
+    }
+}
